@@ -73,8 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 if (input.type === 'password' && input.value.length < 8) {
                     console.log(`Password too short for input: ${input.name}`);
-                    messageValidation('Password must be at least 8 characters long.', 'error', 3000, 'fade');
-                    validate = false;
                 }
             }
             return validate;
